@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Arceus Web Panel</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!--===============================================================================================-->
+      <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+      <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+      <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+      <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+      <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+      <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+      <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+      <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+      <!--===============================================================================================-->
+      <link rel="stylesheet" type="text/css" href="css/util.css">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <!--===============================================================================================-->
+   </head>
+   <body>
+      <div class="container-contact100">
+         <div class="wrap-contact100">
+            <form class="contact100-form validate-form" action="private.php" method="get">
+               <span class="contact100-form-title">
+               Arceus Web Panel
+               </span>
+               
+               <div class="wrap-input100 validate-input" data-validate ="Key is required">
+                  <span class="label-input100">Key*</span>
+                  <input class="input100" type="text" name="key" placeholder="API Key">
+                  <span class="focus-input100"></span>
+               </div>
+			   
+               <div class="wrap-input100 validate-input" data-validate="IP is required">
+                  <span class="label-input100">IP*</span>
+                  <input class="input100" type="text" name="host" placeholder="IP / Host">
+                  <span class="focus-input100"></span>
+               </div>
+			   
+               <div class="wrap-input100 validate-input" data-validate = "port is required">
+                  <span class="label-input100">Port*</span>
+                  <input class="input100" type="number" name="port" placeholder="Port">
+                  <span class="focus-input100"></span>
+               </div>
+			   
+               <!---<div class="wrap-input100 validate-input">--->
+               <!---   <span class="label-input100">Threads</span>--->
+               <!---   <input class="input100" type="number" name="threads" default="1" placeholder="Enter the thread count">--->
+               <!---   <span class="focus-input100"></span>--->
+               <!---</div>--->
+			   
+               <div class="wrap-input100 validate-input">
+                  <span class="label-input100">Time*</span>
+                  <input class="input100" type="number" name="time" placeholder="Time)">
+                  <span class="focus-input100"></span>
+               </div>
+			   
+               <div class="wrap-input100 input100-select">
+                  <span class="label-input100">Methods*</span>
+                  <div>
+                     <select class="selection-2" name="method">
+                        <!----------- v1 Method Listing ----------->
+                        <option>V1 Methods</option>
+                        <option>=============</option>
+                        <option>CLDAP</option> <!--- CLDAP Method --->
+                        <option>SSDP</option> <!--- SSDP Method --->
+                        <option>NTP</option> <!--- NTP Method --->
+                        <option>CHARGEN</option> <!--- CHARGEN Method --->
+                        <option>TFTP</option> <!--- TFTP Method --->
+                        <option>PORTMAP</option> <!--- PORTMAP Method --->
+                        <option>SENTINEL</option> <!--- SENTINEL Method --->
+                        <option>NETBIOS</option> <!--- NETBIOS Method --->
+                        <option>MSSQL</option> <!--- MSSQL Method --->
+                        <option>TS3</option> <!--- TS3 Method --->
+                        <option>HUN-FUN</option> <!--- HUNFUN Method --->
+                        <option>ASS-CRK</option> <!--- ASSCRK Method --->
+                        <option>EFT-PWR</option> <!--- EFTPWR Method --->
+                        <option>PMP-PMP</option> <!--- PMPPMP Method --->
+                        <option>ZCH-CRI</option> <!--- ZCHCRI Method --->
+						      <option>VSE</option> <!--- VSE Method --->
+						      <option>TELNET</option> <!--- TELNET Method --->
+						      <option>TCPABUSE</option> <!--- TCPABUSE Method --->
+						      <option>UDPABUSE</option> <!--- UDPABUSE Method --->
+                        <option>DOMINATE</option> <!--- DOMINATE Method --->
+                        <option>OVHBYPASS</option> <!--- OVH Method --->
+                        <option>OVHBYPASS2</option> <!--- OVH Method v2 --->
+                        <option>NFOBYPASS</option> <!--- NFO Method --->
+                        <option>NFOBYPASS2</option> <!--- NFO Method v2 --->
+						      <option>CFBYPASS</option> <!--- CloudFlare Method --->
+						      <option>BO4BYPASS</option> <!--- BO4 Method --->
+                        <option>PROWIN</option> <!--- Prowin Method --->
+                        <option>YUBINA</option> <!--- Yubina Method --->
+                        <option>WINSEQID</option> <!-- Winseqid Method --->
+                        <option>WINSYN</option> <!--- Winsyn Method --->
+                        <option>ZSYN</option> <!--- ZSYN Method --->
+                        <option>CSYN</option> <!--- CSYN Method --->
+                        <option>XSYN</option> <!--- XSyn Method --->
+                        <option>ESSYN</option> <!--- ESSYN Method --->
+                        <option>ISSYN</option> <!--- ISSYN Method --->
+                        <option>=============</option> <!--- V2 Method Listings --->
+                        <option>v2 Methods</option>  <!--- V2 Method Listings --->
+                        <option>=============</option> <!--- V2 Method Listings --->
+                        <option>DNS</option> <!--- DNS Method --->
+                        <option>SNMP</option> <!--- SNMP Method --->
+                        <option>DB2</option> <!--- DB2 Method --->
+                        <option>ECHO</option> <!--- ECHO Method --->
+                        <option>MDNS</option> <!--- MDNS Method --->
+                        <option>MEMCACHE</option> <!--- MEMCACHE Method --->
+                        <option>RIP</option> <!--- RIP Method --->
+                        <option>REAPER</option> <!--- REAPER Method --->
+                        <option>HEARTBEAT</option> <!--- HEARTBEAT Method --->
+                        <option>ARCEUS</option> <!--- ARCEUS Method --->
+                        <option>WSD</option> <!--- WSD Method --->
+                        <option>ARD</option> <!--- ARD Method --->
+                        <option>BLAZINGFAST</option> <!--- BLAZINGFAST Method --->
+                        <option>AKAMAI</option> <!--- AKAMAI Method --->
+                        <option>FRANTECH</option> <!--- FRANTECH Method --->
+                        <option>VOXILITY</option> <!--- VOXILITY Method --->
+                        <option>LINODE</option> <!--- LINODE Method --->
+                        <option>GCORE</option> <!--- GCORE Method --->
+                        <option>JS</option> <!--- JS Method --->
+                        <option>GENIUSGUARD</option> <!--- GeniusGuard Method --->
+                        <option>RIVAL</option> <!--- Rival Method --->
+                        <option>PROXYPIPE</option> <!--- ProxyPipe Method --->
+                        <option>FORTNITE</option> <!--- Fortnite Gaming Method --->
+                        <option>OVERWATCH</option> <!--- Overwatch Gaming Method --->
+                        <option>AWS</option> <!--- Amazon (AWS) Method --->
+                        <option>DAYZ</option> <!--- DayZ Gaming Method --->
+                        <option>ARK</option> <!--- Ark Gaming Method --->
+                        <option>ZAP</option> <!--- ZAP Method --->
+                        <option>WIZARD</option> <!--- WIZARD Method --->
+                        <option>BOGUS</option> <!--- BOGUS Method --->
+                        <option>RAWUDP</option> <!--- RAWUDP Method --->
+                        <option>UDPVSE1</option> <!--- UDPVSE1 Method --->
+                        <option>UDPVSE2</option> <!--- UDPVSE2 Method --->
+                        <option>GRENADE</option> <!--- GRENADE Method --->
+                        <option>XANAX</option> <!--- XANAX Method --->
+                        <option>FRAG</option> <!--- FRAG Method --->
+                        <option>EJUNK</option> <!--- EJUNK Method --->
+                        <option>TCP-PSH</option> <!--- TCP-PSH Method --->
+                        <option>TCP-FIN</option> <!--- TCP-FIN Method --->
+                        <option>TCP-ACK</option> <!--- TCP-ACK Method --->
+                        <option>TCP-RST</option> <!--- TCP-RST Method --->
+                        <option>TCP-XMAS</option> <!--- TCP-XMAS Method --->
+                        <option>=============</option> <!--- Layer7 Method Listings --->
+                        <option>Layer 7 Methods</option> <!--- Layer7 Method Listings --->
+                        <option>=============</option> <!--- Layer7 Method Listings --->
+                        <option>ARME</option> <!--- Arme Method --->
+                        <option>OMEGA</option> <!--- OMEGA Method --->
+                        <option> </option>
+                     </select>
+                  </div>
+                  <span class="focus-input100"></span>
+               </div>
+			   
+               <div class="container-contact100-form-btn">
+                  <div class="wrap-contact100-form-btn">
+                     <div class="contact100-form-bgbtn"></div>
+                     <button class="contact100-form-btn" type="submit">
+                     <span>
+                     Submit
+                     <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                     </span>
+                     </button>
+                  </div>
+               </div>
+			   
+            </form>
+         </div>
+      </div>
+      <div id="dropDownSelect1"></div>
+      <!--===============================================================================================-->
+      <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/animsition/js/animsition.min.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/bootstrap/js/popper.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/select2/select2.min.js"></script>
+      <script>
+         $(".selection-2").select2({
+         	minimumResultsForSearch: 20,
+         	dropdownParent: $('#dropDownSelect1')
+         });
+      </script>
+      <!--===============================================================================================-->
+      <script src="vendor/daterangepicker/moment.min.js"></script>
+      <script src="vendor/daterangepicker/daterangepicker.js"></script>
+      <!--===============================================================================================-->
+      <script src="vendor/countdowntime/countdowntime.js"></script>
+      <!--===============================================================================================-->
+      <script src="js/main.js"></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-23581568-13');
+      </script>
+   </body>
+</html>
